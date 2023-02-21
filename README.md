@@ -23,6 +23,21 @@ Scaffolding new project.
 After some more time, I realized that debugging won't help, and decided to create more minimalistic setup.
 I decided not to add testing, ui frameworks etc. only the required parts. Also this time I am choosing yarn as a package manager, not npm or pnpm as before.
 
+Now... New setup
+I ran project with typescript and nuxt only. Works. I added Tailwind following the guide and now things break.
+Decided to check what peer dependencies are missing and install them one by one. I installed Typescript, Webpack, babel-core, consola.
+The error is different now.
+`opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'`
+[this](https://github.com/webpack/webpack/issues/15900#issuecomment-1373595261) solved the issue... to add `NODE_OPTIONS=--openssl-legacy-provider`
+next error: ts-loader couldn't be loaded... added as a dev dep.
+next erorr: `Module build failed (from ./node_modules/ts-loader/index.js):              friendly-errors 20:25:17
+TypeError: loaderContext.getOptions is not a function`
+following [this](https://github.com/TypeStrong/ts-loader/issues/1484#issuecomment-1219600213) advice, I downgraded ts-loader to 8.4.0
+It's working!!!!! 20:35pm...
+
 ## Build Setup
 
 ```bash

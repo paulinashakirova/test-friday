@@ -1,11 +1,12 @@
 <template>
-  <Tutorial />
+  <div>
+    Hello
+    <!-- <div v-for="category in categories" :key="category" class="font-extrabold">
+      {{ category }}
+    </div> -->
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage',
-})
+// import categories from '@/static/categories.json'
 </script>

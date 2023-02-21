@@ -1,0 +1,695 @@
+[
+  {
+    "id": "4f87e7c0-2831-4a38-9b94-dc94f2e8554d",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": -4.69,
+    "currency": "GBP",
+    "date": "2017-09-01 23:00:00.000"
+  },
+  {
+    "id": "56b80608-ed28-4182-a509-09ff9deb3ec9",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "11bb7aa7-61e6-4753-b3f2-365f83694417",
+    "reference": "",
+    "amount": -3.99,
+    "currency": "GBP",
+    "date": "2017-09-01 23:00:00.000"
+  },
+  {
+    "id": "1a74ff6b-2c56-4c88-9f4e-7e1399092d9b",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "e5e088d9-ab98-450c-be61-ef7b85940a0b",
+    "reference": "",
+    "amount": -3.99,
+    "currency": "EUR",
+    "date": "2017-09-01 23:00:00.000"
+  },
+  {
+    "id": "39ef604d-4e9b-4caa-bdee-7423871601df",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "b61354fc-c493-46fe-8edd-87da4f503965",
+    "reference": "",
+    "amount": -4.69,
+    "currency": "EUR",
+    "date": "2017-09-01 23:00:00.000"
+  },
+  {
+    "id": "0ede387c-003a-4c9b-a16c-69aec80db524",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "292c404b-a504-4bb7-abcd-a50816620330",
+    "reference": "",
+    "amount": -39.05,
+    "currency": "GBP",
+    "date": "2017-09-02 23:00:00.000"
+  },
+  {
+    "id": "a3a3dbb3-c46a-4e0e-9208-e25b35c4b985",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "b61354fc-c493-46fe-8edd-87da4f503965",
+    "reference": "",
+    "amount": -39.05,
+    "currency": "EUR",
+    "date": "2017-09-02 23:00:00.000"
+  },
+  {
+    "id": "848d8ef6-83fd-4662-92b7-075081f2a025",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "f805cb0b-af81-419b-a336-df6d79f16093",
+    "reference": "",
+    "amount": -63.73,
+    "currency": "GBP",
+    "date": "2017-09-06 23:00:00.000"
+  },
+  {
+    "id": "97cd6fbf-9146-4853-8d65-18a546f1f762",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": -63.73,
+    "currency": "EUR",
+    "date": "2017-09-06 23:00:00.000"
+  },
+  {
+    "id": "3ec95623-9267-4f34-9ffb-4f1c1eec2afe",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "cb55a2e0-0299-449d-bd81-6d1a71e8b0da",
+    "reference": "",
+    "amount": -0.12,
+    "currency": "GBP",
+    "date": "2017-09-06 23:00:00.000"
+  },
+  {
+    "id": "b579f728-e854-4069-b62f-a8775aa78e78",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "a5f851cb-f3ff-41e3-8629-929395e65d50",
+    "reference": "",
+    "amount": -0.12,
+    "currency": "EUR",
+    "date": "2017-09-06 23:00:00.000"
+  },
+  {
+    "id": "0488f712-9935-4973-8d69-f11c2edf2aed",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": -42.71,
+    "currency": "EUR",
+    "date": "2017-09-08 23:00:00.000"
+  },
+  {
+    "id": "d83555a5-9078-41d8-951d-d165bbb1c5a5",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "292c404b-a504-4bb7-abcd-a50816620330",
+    "reference": "",
+    "amount": -0.12,
+    "currency": "GBP",
+    "date": "2017-09-08 23:00:00.000"
+  },
+  {
+    "id": "bc226d20-9276-413d-889c-db41086effa3",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "e4cb1102-1e2d-407e-b986-a7f14a7f0835",
+    "reference": "",
+    "amount": -0.12,
+    "currency": "EUR",
+    "date": "2017-09-08 23:00:00.000"
+  },
+  {
+    "id": "8944125f-06ba-4438-a8ef-fd3955862777",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "350a5a32-beee-47f3-bb71-3814d4a7082a",
+    "reference": "Electer Bander Hostelry",
+    "amount": -42.71,
+    "currency": "GBP",
+    "date": "2017-09-08 23:00:00.000"
+  },
+  {
+    "id": "72518d6f-28d5-44f3-9a23-55ad4c0064f1",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "80304577-2f6b-481f-bf46-28d243046b66",
+    "reference": "",
+    "amount": 3835.25,
+    "currency": "EUR",
+    "date": "2017-09-11 23:00:00.000"
+  },
+  {
+    "id": "6c6f1e93-ec49-4a64-a19b-37abe849da16",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "2059e527-77e3-443e-80f7-d38dc9656b55",
+    "reference": "",
+    "amount": 3835.25,
+    "currency": "GBP",
+    "date": "2017-09-11 23:00:00.000"
+  },
+  {
+    "id": "6a0b25c1-2a53-4acc-88a0-3c17af3e58e3",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "0c600155-27a0-40ce-9df5-523f2831ff56",
+    "reference": "Pantries Uvulatomy Catamenial",
+    "amount": -27.56,
+    "currency": "GBP",
+    "date": "2017-09-13 23:00:00.000"
+  },
+  {
+    "id": "90d1901b-2fc5-4b08-8937-1d31ad08235c",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "536d9623-863d-4011-a04a-31e85066810d",
+    "reference": "",
+    "amount": -0.57,
+    "currency": "EUR",
+    "date": "2017-09-13 23:00:00.000"
+  },
+  {
+    "id": "d90766a5-69dc-4594-8c8c-6c561913c287",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "0bc45cf5-6dc7-4cfb-bae4-b740816862ac",
+    "reference": "",
+    "amount": -27.56,
+    "currency": "EUR",
+    "date": "2017-09-13 23:00:00.000"
+  },
+  {
+    "id": "cdd4e6c6-b290-4113-973c-59f62ad0c98e",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "",
+    "reference": "Irreconcilable Millrind Statutably",
+    "amount": -0.57,
+    "currency": "GBP",
+    "date": "2017-09-13 23:00:00.000"
+  },
+  {
+    "id": "3a429194-3554-46dc-90c1-f45f2929436d",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "6ad0e563-7f94-417d-8370-7eca2e52b2cc",
+    "reference": "",
+    "amount": -17.45,
+    "currency": "GBP",
+    "date": "2017-09-14 23:00:00.000"
+  },
+  {
+    "id": "4851bce2-c856-4e7d-8f2a-69a134f1d6d9",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "c134faed-5c47-4b76-8439-3f3c808ef782",
+    "reference": "",
+    "amount": -17.45,
+    "currency": "EUR",
+    "date": "2017-09-14 23:00:00.000"
+  },
+  {
+    "id": "8862af86-4d46-4b69-8b67-e5bb9e205574",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "f0fd67cd-8c38-4883-8a39-529974b6f3a1",
+    "reference": "",
+    "amount": -1212.44,
+    "currency": "EUR",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "b805611a-6dfd-491e-9c28-a67c59c72fef",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "292c404b-a504-4bb7-abcd-a50816620330",
+    "reference": "",
+    "amount": -13.34,
+    "currency": "GBP",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "22d72154-f963-4edc-b814-9486066e724a",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "977a3d02-364d-4c88-9856-85cd93a361ef",
+    "reference": "Alcoranic Taciturn Heraldically",
+    "amount": -2940.64,
+    "currency": "GBP",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "c5ea0029-1fcb-4101-8e61-ff76c10e6750",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "f41d7624-1187-412a-b314-80a6832f81c0",
+    "reference": "Unition Broking Malonyl",
+    "amount": -13.34,
+    "currency": "EUR",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "e8853c8d-4208-4389-b6e1-e8faf5bb870e",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "3e384a41-01f2-4978-b10e-73dba7cb6878",
+    "reference": "Moral Outloose Rectified",
+    "amount": -1212.44,
+    "currency": "GBP",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "98364fa3-0699-43f4-8ce7-3f8f1a4cd7ed",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "977a3d02-364d-4c88-9856-85cd93a361ef",
+    "reference": "",
+    "amount": -2940.64,
+    "currency": "EUR",
+    "date": "2017-09-15 23:00:00.000"
+  },
+  {
+    "id": "d09d86ac-8023-46d8-ad2f-456210b1fd69",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "d2f6df72-a6e6-4fc2-9221-9864406447f0",
+    "reference": "",
+    "amount": -181.76,
+    "currency": "GBP",
+    "date": "2017-09-19 23:00:00.000"
+  },
+  {
+    "id": "5a458199-466e-4856-aeed-98b567311e8f",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "c8b4af5c-916f-432f-b7b5-f4e9a351e688",
+    "reference": "",
+    "amount": -8.27,
+    "currency": "EUR",
+    "date": "2017-09-19 23:00:00.000"
+  },
+  {
+    "id": "c13f552b-1004-4a67-9715-524e461c9e30",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "0c600155-27a0-40ce-9df5-523f2831ff56",
+    "reference": "",
+    "amount": -8.27,
+    "currency": "GBP",
+    "date": "2017-09-19 23:00:00.000"
+  },
+  {
+    "id": "f2de807e-61f2-4553-9833-2aef92eceb56",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "f805cb0b-af81-419b-a336-df6d79f16093",
+    "reference": "",
+    "amount": -181.76,
+    "currency": "EUR",
+    "date": "2017-09-19 23:00:00.000"
+  },
+  {
+    "id": "64609e3c-c8af-4b84-8b09-e4c2b3bcc1e9",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "f630d7f1-afb9-4713-b51b-265558836753",
+    "reference": "Indew Vaccination Caducary",
+    "amount": -17.58,
+    "currency": "GBP",
+    "date": "2017-09-20 23:00:00.000"
+  },
+  {
+    "id": "fb044941-a534-4a98-b1a6-3a8ef0422547",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "2059e527-77e3-443e-80f7-d38dc9656b55",
+    "reference": "",
+    "amount": -17.58,
+    "currency": "EUR",
+    "date": "2017-09-20 23:00:00.000"
+  },
+  {
+    "id": "b82cfe06-6f34-4da3-a3bb-57759a627881",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "2059e527-77e3-443e-80f7-d38dc9656b55",
+    "reference": "Xanthoxylene Polynuclear Aduncous",
+    "amount": -18.89,
+    "currency": "GBP",
+    "date": "2017-09-21 23:00:00.000"
+  },
+  {
+    "id": "64abf1fb-ef90-4c22-815f-5afb4292f731",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "e4cb1102-1e2d-407e-b986-a7f14a7f0835",
+    "reference": "Underministry Hexeikosane Tisicky",
+    "amount": -18.89,
+    "currency": "EUR",
+    "date": "2017-09-21 23:00:00.000"
+  },
+  {
+    "id": "9e0ec13d-9254-447d-8557-6233d832b860",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "c8b4af5c-916f-432f-b7b5-f4e9a351e688",
+    "reference": "",
+    "amount": -3.2,
+    "currency": "GBP",
+    "date": "2017-09-22 23:00:00.000"
+  },
+  {
+    "id": "7b3b84ab-7d5a-4451-9ff9-0f5830fb1002",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": -24.88,
+    "currency": "GBP",
+    "date": "2017-09-22 23:00:00.000"
+  },
+  {
+    "id": "93d288f8-8f90-4e09-9d18-55541828b798",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "cb55a2e0-0299-449d-bd81-6d1a71e8b0da",
+    "reference": "",
+    "amount": -3.2,
+    "currency": "EUR",
+    "date": "2017-09-22 23:00:00.000"
+  },
+  {
+    "id": "c8e64030-e9ce-47f2-891c-aad65cb6d9a0",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "292c404b-a504-4bb7-abcd-a50816620330",
+    "reference": "Jeering Thrall-like Smeltie",
+    "amount": -24.88,
+    "currency": "EUR",
+    "date": "2017-09-22 23:00:00.000"
+  },
+  {
+    "id": "2bafc63b-9081-4a15-8497-ac887ed4ad43",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": -4.07,
+    "currency": "GBP",
+    "date": "2017-09-23 23:00:00.000"
+  },
+  {
+    "id": "a0493675-25ad-4bf7-8575-072970096450",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "f630d7f1-afb9-4713-b51b-265558836753",
+    "reference": "Capilliform Irritative Monographic",
+    "amount": 612.49,
+    "currency": "GBP",
+    "date": "2017-09-23 23:00:00.000"
+  },
+  {
+    "id": "ff51a81b-ae89-45be-beaf-474a5792d728",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "8d92fd50-06b8-494c-b732-cd0b98f10b3c",
+    "reference": "Poised Transanimation Discreditable",
+    "amount": 612.49,
+    "currency": "EUR",
+    "date": "2017-09-23 23:00:00.000"
+  },
+  {
+    "id": "6729dfc3-dc12-4baa-b93b-bce2c448538f",
+    "accountId": "313ac86b-337c-484f-9a81-0e1c207699aa",
+    "categoryId": "e9641f65-f89a-4278-b490-4f2c4fa6e2f7",
+    "reference": "",
+    "amount": -4.07,
+    "currency": "EUR",
+    "date": "2017-09-23 23:00:00.000"
+  },
+  {
+    "id": "12d73b77-208a-443e-9231-88831520280b",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "a5f851cb-f3ff-41e3-8629-929395e65d50",
+    "reference": "",
+    "amount": -77.07,
+    "currency": "EUR",
+    "date": "2018-02-02 05:54:31.000"
+  },
+  {
+    "id": "ffc72f16-b0d7-487f-8401-e37e71a3b236",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "8d92fd50-06b8-494c-b732-cd0b98f10b3c",
+    "reference": "",
+    "amount": -426.39,
+    "currency": "EUR",
+    "date": "2018-02-04 09:07:21.000"
+  },
+  {
+    "id": "62acc052-c2f8-44c5-8397-45cc3cd923bc",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "761ef302-53e5-4d3b-a076-7292ac19f0fd",
+    "reference": "",
+    "amount": -458.97,
+    "currency": "EUR",
+    "date": "2018-02-05 13:26:56.000"
+  },
+  {
+    "id": "2c8b0f92-f893-4b66-8af4-2e43c6c0e68a",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "3e384a41-01f2-4978-b10e-73dba7cb6878",
+    "reference": "Timothy grass Monoplegia Calamitous",
+    "amount": -31.17,
+    "currency": "EUR",
+    "date": "2018-02-06 18:54:22.000"
+  },
+  {
+    "id": "731440fc-83a7-400f-9063-bebc487def6d",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "292c404b-a504-4bb7-abcd-a50816620330",
+    "reference": "",
+    "amount": -361.87,
+    "currency": "EUR",
+    "date": "2018-02-07 14:41:30.000"
+  },
+  {
+    "id": "1280f2f0-60ad-4135-a1a6-6055f1110883",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "c8b4af5c-916f-432f-b7b5-f4e9a351e688",
+    "reference": "",
+    "amount": 351.04,
+    "currency": "EUR",
+    "date": "2018-02-08 03:46:00.000"
+  },
+  {
+    "id": "0b998e70-8670-40a4-a908-1c1fa989faad",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "350a5a32-beee-47f3-bb71-3814d4a7082a",
+    "reference": "",
+    "amount": -232.65,
+    "currency": "EUR",
+    "date": "2018-02-09 18:57:19.000"
+  },
+  {
+    "id": "f30a83cb-d70f-4a78-a453-52e6511487c5",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "49b11f13-8eb6-417d-aa02-467d1686c003",
+    "reference": "",
+    "amount": 499.67,
+    "currency": "EUR",
+    "date": "2018-02-10 10:20:42.000"
+  },
+  {
+    "id": "1b44045b-3e64-434e-bdf4-69d771d04aab",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "350a5a32-beee-47f3-bb71-3814d4a7082a",
+    "reference": "Comprehensible Quadrennium Toysome",
+    "amount": 30.36,
+    "currency": "EUR",
+    "date": "2018-02-10 22:52:10.000"
+  },
+  {
+    "id": "91767eca-0ae7-4fbb-9d2a-c1c7399e6f23",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "f805cb0b-af81-419b-a336-df6d79f16093",
+    "reference": "Junket Pianist Naiant",
+    "amount": 406.44,
+    "currency": "EUR",
+    "date": "2018-02-11 07:38:08.000"
+  },
+  {
+    "id": "1a680132-0213-416c-bb9c-f1810e339d12",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "a5f851cb-f3ff-41e3-8629-929395e65d50",
+    "reference": "",
+    "amount": -65.21,
+    "currency": "EUR",
+    "date": "2018-02-11 19:01:38.000"
+  },
+  {
+    "id": "352be152-abc7-49a2-b596-77ae55146b7f",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "ca9d3311-7446-4615-b071-5fe05f4e1be9",
+    "reference": "",
+    "amount": 464.97,
+    "currency": "EUR",
+    "date": "2018-02-12 04:24:10.000"
+  },
+  {
+    "id": "043744f1-7ca9-4fba-8b68-159ecc9560ea",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "cb55a2e0-0299-449d-bd81-6d1a71e8b0da",
+    "reference": "",
+    "amount": 45.93,
+    "currency": "EUR",
+    "date": "2018-02-12 12:45:19.000"
+  },
+  {
+    "id": "8dabe1be-14ac-4b01-aed3-5522a04c0278",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "2059e527-77e3-443e-80f7-d38dc9656b55",
+    "reference": "",
+    "amount": 114.95,
+    "currency": "EUR",
+    "date": "2018-02-15 12:13:20.000"
+  },
+  {
+    "id": "0483d34f-a442-4ae0-b808-cdc9229d7e38",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "c134faed-5c47-4b76-8439-3f3c808ef782",
+    "reference": "Vascular Anticipation Disparkle",
+    "amount": 317.85,
+    "currency": "EUR",
+    "date": "2018-02-16 14:36:45.000"
+  },
+  {
+    "id": "95a5739c-4a5e-4699-b265-a42856c79ec1",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "c8b4af5c-916f-432f-b7b5-f4e9a351e688",
+    "reference": "",
+    "amount": 352.3,
+    "currency": "EUR",
+    "date": "2018-02-17 01:43:16.000"
+  },
+  {
+    "id": "cf5f5f34-c4e8-4ba4-a799-fb78e41e1f61",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "ed46831b-5c6d-49d5-a6a5-8e764ffa9b14",
+    "reference": "Crepusculine Juglans Muscoid",
+    "amount": -137.11,
+    "currency": "GBP",
+    "date": "2018-02-18 02:05:00.000"
+  },
+  {
+    "id": "b41f0625-2b49-4cfe-a49d-f7814a43f303",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "d2f6df72-a6e6-4fc2-9221-9864406447f0",
+    "reference": "Gunnery Lincoln green Yearn",
+    "amount": 357.77,
+    "currency": "EUR",
+    "date": "2018-02-20 08:19:13.000"
+  },
+  {
+    "id": "f55c3d13-946e-4a37-a6c0-444299f6cad9",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "350a5a32-beee-47f3-bb71-3814d4a7082a",
+    "reference": "",
+    "amount": 486.78,
+    "currency": "EUR",
+    "date": "2018-02-20 19:31:34.000"
+  },
+  {
+    "id": "681ae513-8329-4085-886d-f9432a1ca869",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "42169f4c-9aea-47f1-ab98-f41d379b0bad",
+    "reference": "Cahoot Elinguate Delectation",
+    "amount": -392.94,
+    "currency": "EUR",
+    "date": "2018-02-22 04:01:43.000"
+  },
+  {
+    "id": "89c05192-29b9-44ee-a73a-f26ca7a2c2ef",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "0c600155-27a0-40ce-9df5-523f2831ff56",
+    "reference": "",
+    "amount": 17.33,
+    "currency": "EUR",
+    "date": "2018-02-22 22:00:48.000"
+  },
+  {
+    "id": "6896de12-911f-457e-a02a-afec8c66ff93",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "c3189eec-282a-4680-abab-006611b02d76",
+    "reference": "Pisces Etherealness Lactin",
+    "amount": -80.67,
+    "currency": "EUR",
+    "date": "2018-02-23 00:31:44.000"
+  },
+  {
+    "id": "a8eae9f2-f60f-4b99-9e4a-6ca5c2bc6f47",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "977a3d02-364d-4c88-9856-85cd93a361ef",
+    "reference": "",
+    "amount": 250.76,
+    "currency": "EUR",
+    "date": "2018-02-26 14:41:06.000"
+  },
+  {
+    "id": "0fddae0c-96a4-4748-a10a-59ef17ee746f",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "ca9d3311-7446-4615-b071-5fe05f4e1be9",
+    "reference": "",
+    "amount": 464.31,
+    "currency": "EUR",
+    "date": "2018-02-27 01:00:00.000"
+  },
+  {
+    "id": "d3dade30-3ac5-420c-839b-71d4992b041a",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "0ca2a326-085d-45c8-8a15-9e72f2598104",
+    "reference": "",
+    "amount": 152.24,
+    "currency": "EUR",
+    "date": "2018-02-27 07:11:37.000"
+  },
+  {
+    "id": "00943adf-71ad-4c3c-8a02-1aacd414e0e4",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "013d830c-ee70-4a0b-81dd-1edce790f435",
+    "reference": "Black Monday Berhyming Intensate",
+    "amount": 426.04,
+    "currency": "EUR",
+    "date": "2018-02-28 04:26:29.000"
+  },
+  {
+    "id": "850f994f-4729-4f86-82c5-db951e237632",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "0bc45cf5-6dc7-4cfb-bae4-b740816862ac",
+    "reference": "",
+    "amount": -259.37,
+    "currency": "EUR",
+    "date": "2018-03-01 07:39:02.000"
+  },
+  {
+    "id": "2322fea8-0424-4b4f-a75f-c990eb41d55d",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "0c600155-27a0-40ce-9df5-523f2831ff56",
+    "reference": "Infrangibleness Prescutum Setwall",
+    "amount": 322.59,
+    "currency": "EUR",
+    "date": "2018-03-01 23:55:07.000"
+  },
+  {
+    "id": "fc3a3a05-a5de-4871-ba29-75d9d21ca52e",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "f630d7f1-afb9-4713-b51b-265558836753",
+    "reference": "",
+    "amount": 377.58,
+    "currency": "EUR",
+    "date": "2018-03-02 05:30:46.000"
+  },
+  {
+    "id": "001adb34-7ace-4036-8723-42ed2d0f140b",
+    "accountId": "a3bbb581-7e91-488e-a416-8ac8f5f6f5be",
+    "categoryId": "80304577-2f6b-481f-bf46-28d243046b66",
+    "reference": "Nan Inwalled Ochimy",
+    "amount": -347.49,
+    "currency": "GBP",
+    "date": "2018-03-02 23:11:36.000"
+  },
+  {
+    "id": "f2ac9ea0-cf45-4f85-ad8b-5c219f2d129f",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "80304577-2f6b-481f-bf46-28d243046b66",
+    "reference": "",
+    "amount": -458.63,
+    "currency": "EUR",
+    "date": "2018-03-05 14:24:27.000"
+  },
+  {
+    "id": "e209a065-c0e6-4ce1-ba40-1edea7072d52",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "c134faed-5c47-4b76-8439-3f3c808ef782",
+    "reference": "Preobtain Foolfish Prorogued",
+    "amount": 220.45,
+    "currency": "EUR",
+    "date": "2018-03-16 13:14:32.000"
+  },
+  {
+    "id": "2056ba3a-a841-4976-a57d-0f4e794a606c",
+    "accountId": "c5f3f93c-bf33-402e-a9f1-c15c148d451b",
+    "categoryId": "2ecef92e-954e-4b42-9ce0-9e25194a53d5",
+    "reference": "Falseness Entheal Eighty",
+    "amount": 124.15,
+    "currency": "EUR",
+    "date": "2018-03-16 18:50:12.000"
+  }
+]
