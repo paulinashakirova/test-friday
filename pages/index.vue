@@ -1,18 +1,9 @@
 <script setup lang="ts">
-// import categories from '@/static/mock-data/categories.json'
-
-import CategoryTag from '~/components/CategoryTag.vue'
+import TransactionsTable from '@/sections/TransactionsTable.vue'
 </script>
 
 <template>
-  <div>
-    <div class="my-20 mx-auto">
-      <div class="flex justify-center">
-        <CategoryTag label="Advertizing" color="purple" />
-        <!-- <div v-for="category in categories" :key="category.id">
-      {{ category.name }}
-    </div> -->
-      </div>
-    </div>
+  <div class="mx-10 mt-10">
+    <TransactionsTable />
   </div>
 </template>
