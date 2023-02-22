@@ -38,6 +38,11 @@ TypeError: loaderContext.getOptions is not a function`
 following [this](https://github.com/TypeStrong/ts-loader/issues/1484#issuecomment-1219600213) advice, I downgraded ts-loader to 8.4.0
 It's working!!!!! 20:35pm...
 
+Second day:
+
+1. Tried to use `computed` with `nuxtjs-composition-api` and got this error `Can't reexport the named export 'watchSyncEffect' from non EcmaScript module (only default export is available)`
+   solved by adding `'@nuxtjs/composition-api/module',` `'@nuxtjs/tailwindcss'` build modules.
+
 ## Build Setup
 
 ```bash
