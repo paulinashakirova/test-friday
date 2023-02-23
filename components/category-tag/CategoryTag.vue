@@ -2,24 +2,24 @@
 import { computed } from '@nuxtjs/composition-api'
 
 interface Props {
-  label: string
-  color?: string
+  label?: string
+  color?: string | number
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  label: 'No category',
+})
 
 const dynamicColor = computed(() => {
-  return !props.color
-    ? 'bg-orange-300'
-    : props.color && props.color.length !== 0 && props.color.startsWith('#')
-    ? `bg-[${props.color}]`
-    : props.color
+  return typeof props.color === 'string'
+    ? `bg-[#${props.color}]`
+    : 'bg-gray-100'
 })
 </script>
 
 <template>
   <div
-    class="py-3 px-4 rounded-md min-w-[150px] text-center"
+    class="py-3 px-4 rounded-md min-w-[100px] max-w-[200px] text-center"
     :class="dynamicColor"
   >
     {{ props.label }}
