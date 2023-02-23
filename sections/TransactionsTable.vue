@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import TransactionRow from '@/components/transactions/TransactionRow.vue'
+import SortBy from '@/components/sort/SortBy.vue'
+// import TransactionRow from '@/components/transactions/TransactionRow.vue'
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
-import transactions from '@/static/mock-data/transactions.json'
+import { computed, ref, watchEffect } from '@nuxtjs/composition-api'
+
+const selectedBank = ref(null)
 
 const categoryById = (id: string) => {
   const category = categories.find((category) => category.id === id)
@@ -10,15 +13,24 @@ const categoryById = (id: string) => {
 }
 
 const categoryColorById = (id: string) => {
-  const category = categories.find((category) => category.id === id)
-  console.log('color', category?.color)
-
-  return category?.color
+  return categories.find((category) => category.id === id)?.color
 }
 
 const bankById = (id: string) => {
   return accounts.find((account) => account.id === id)?.bank
 }
+
+const arrayOfBanks = computed(() => {
+  let bankList = []
+  for (let i = 0; i <= accounts.length - 1; i++) {
+    bankList.push(accounts[i].bank)
+  }
+  return new Set(bankList)
+})
+
+watchEffect(() => {
+  console.log('selectedBank', selectedBank.value)
+})
 </script>
 
 <template>
@@ -28,11 +40,27 @@ const bankById = (id: string) => {
     >
       <div>Reference</div>
       <div>Category</div>
-      <div>Bank</div>
+      <div class="flex flex-col">
+        <label class="ml-1" for="bank-select">Bank</label>
+
+        <select
+          v-model="selectedBank"
+          class="mr-2"
+          name="banks"
+          id="bank-select"
+        >
+          <option value="">No filter applied</option>
+          <option :value="bank" v-for="bank in arrayOfBanks" :key="bank">
+            {{ bank }}
+          </option>
+        </select>
+      </div>
       <div>Date</div>
       <div>Amount</div>
     </div>
-    <div
+
+    <SortBy :bank-name="selectedBank" />
+    <!-- <div
       v-for="{
         reference,
         accountId,
@@ -53,6 +81,6 @@ const bankById = (id: string) => {
         :amount="amount"
         :color="categoryColorById(categoryId)"
       />
-    </div>
+    </div> -->
   </div>
 </template>
