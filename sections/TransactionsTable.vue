@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import SortBy from '@/components/sort/SortBy.vue'
+import SortByBank from '@/components/sort/SortByBank.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
-import { computed, ref, watchEffect } from '@nuxtjs/composition-api'
+import { computed, ref } from '@nuxtjs/composition-api'
 
 const selectedBank = ref('')
 
@@ -26,10 +26,6 @@ const arrayOfBanks = computed(() => {
     bankList.push(accounts[i].bank)
   }
   return new Set(bankList)
-})
-
-watchEffect(() => {
-  console.log('selectedBank', selectedBank.value)
 })
 </script>
 
@@ -59,7 +55,7 @@ watchEffect(() => {
       <div>Amount</div>
     </div>
 
-    <SortBy :bank-name="selectedBank" v-slot="{ transaction }">
+    <SortByBank :bank-name="selectedBank" v-slot="{ transaction }">
       <TransactionRow
         :date="transaction.date"
         :currency="transaction.currency"
@@ -69,6 +65,6 @@ watchEffect(() => {
         :bank="bankById(transaction.accountId)"
         :reference="transaction.reference"
       />
-    </SortBy>
+    </SortByBank>
   </div>
 </template>

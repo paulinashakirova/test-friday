@@ -2,13 +2,12 @@
 import accounts from '@/static/mock-data/accounts.json'
 import transactions from '@/static/mock-data/transactions.json'
 import { computed } from '@nuxtjs/composition-api'
+
 interface Props {
   bankName?: string | null
 }
 
 const props = defineProps<Props>()
-// console.log('props', props.bankName)
-console.log('bankname', props.bankName)
 
 const findTransactionsByBank = computed(() => {
   if (!props.bankName || props.bankName === '') {
@@ -20,11 +19,11 @@ const findTransactionsByBank = computed(() => {
     const result = transactions.filter(
       (transaction) => transaction.accountId == bankId
     )
-    // console.log('result', result)
     return result
   }
 })
 </script>
+
 <template>
   <div>
     <div v-for="transaction in findTransactionsByBank">

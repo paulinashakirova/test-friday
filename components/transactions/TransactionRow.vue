@@ -32,7 +32,6 @@ const date = computed(() => {
   >
     <div :class="!props.reference ? 'text-gray-300' : ''">{{ reference }}</div>
     <CategoryTag :label="props.category" :color="props.color" />
-
     <div>{{ props.bank }}</div>
     <div>{{ date }}</div>
     <div>{{ props.amount }} {{ props.currency }}</div>
