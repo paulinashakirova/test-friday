@@ -2,16 +2,16 @@
 import accounts from '@/static/mock-data/accounts.json'
 import transactions from '@/static/mock-data/transactions.json'
 import { computed } from '@nuxtjs/composition-api'
-import TransactionRow from '../transactions/TransactionRow.vue'
 interface Props {
   bankName?: string | null
 }
 
 const props = defineProps<Props>()
 // console.log('props', props.bankName)
+console.log('bankname', props.bankName)
 
 const findTransactionsByBank = computed(() => {
-  if (!props.bankName) {
+  if (!props.bankName || props.bankName === '') {
     return transactions
   } else {
     const bankId = accounts.find(
@@ -28,11 +28,7 @@ const findTransactionsByBank = computed(() => {
 <template>
   <div>
     <div v-for="transaction in findTransactionsByBank">
-      <TransactionRow
-        :date="transaction.date"
-        :currency="transaction.currency"
-        :amount="transaction.amount"
-      />
+      <slot :transaction="transaction" />
     </div>
   </div>
 </template>
