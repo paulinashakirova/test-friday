@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import SortBy from '@/components/sort/SortBy.vue'
-// import TransactionRow from '@/components/transactions/TransactionRow.vue'
+import TransactionRow from '@/components/transactions/TransactionRow.vue'
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
 import { computed, ref, watchEffect } from '@nuxtjs/composition-api'
 
-const selectedBank = ref(null)
+const selectedBank = ref('')
 
 const categoryById = (id: string) => {
   const category = categories.find((category) => category.id === id)
@@ -59,7 +59,15 @@ watchEffect(() => {
       <div>Amount</div>
     </div>
 
-    <SortBy :bank-name="selectedBank" />
+    <SortBy :bank-name="selectedBank" v-slot="{ transaction }">
+      <TransactionRow
+        :date="transaction.date"
+        :currency="transaction.currency"
+        :amount="transaction.amount"
+        :category="transaction.categoryId"
+        :reference="transaction.reference"
+      />
+    </SortBy>
     <!-- <div
       v-for="{
         reference,
