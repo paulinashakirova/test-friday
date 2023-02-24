@@ -12,15 +12,15 @@ const props = withDefaults(defineProps<Props>(), {
 
 const dynamicColor = computed(() => {
   return typeof props.color === 'string'
-    ? `bg-[#${props.color}]`
-    : 'bg-gray-100'
+    ? `background-color: #${props.color || 'fff3da'}`
+    : 'background-color: #f4d9fa'
 })
 </script>
 
 <template>
   <div
-    class="py-3 px-4 rounded-md min-w-[100px] max-w-[200px] text-center"
-    :class="dynamicColor"
+    class="py-3 px-4 rounded-md min-w-[100px] max-w-[200px] text-center mx-2"
+    :style="dynamicColor"
   >
     {{ props.label }}
   </div>

@@ -49,7 +49,7 @@ watchEffect(() => {
           name="banks"
           id="bank-select"
         >
-          <option value="">No filter applied</option>
+          <option value="">Sort by</option>
           <option :value="bank" v-for="bank in arrayOfBanks" :key="bank">
             {{ bank }}
           </option>
@@ -64,31 +64,11 @@ watchEffect(() => {
         :date="transaction.date"
         :currency="transaction.currency"
         :amount="transaction.amount"
-        :category="transaction.categoryId"
+        :category="categoryById(transaction.categoryId)"
+        :color="categoryColorById(transaction.categoryId)"
+        :bank="bankById(transaction.accountId)"
         :reference="transaction.reference"
       />
     </SortBy>
-    <!-- <div
-      v-for="{
-        reference,
-        accountId,
-        amount,
-        categoryId,
-        currency,
-        date,
-        id,
-      } in transactions"
-      :key="id"
-    >
-      <TransactionRow
-        :reference="reference"
-        :category="categoryById(categoryId)"
-        :bank="bankById(accountId)"
-        :date="date"
-        :currency="currency"
-        :amount="amount"
-        :color="categoryColorById(categoryId)"
-      />
-    </div> -->
   </div>
 </template>
