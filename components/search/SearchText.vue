@@ -29,7 +29,7 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <form @submit.prevent="onSubmit" class="flex flex-col">
+  <form @submit.prevent="onSubmit" class="flex flex-col text-gray-500">
     <label for="transaction-search">Search</label>
     <div class="flex items-center">
       <input
