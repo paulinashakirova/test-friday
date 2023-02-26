@@ -1,11 +1,36 @@
 <script setup lang="ts">
-import SortByBank from '@/components/sort/SortByBank.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
+import { filterByBank } from '@/composables/filters'
+import { sortDates } from '@/composables/sorters'
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
-import { computed, ref } from '@nuxtjs/composition-api'
+import transactions from '@/static/mock-data/transactions.json'
+
+import { computed, ref, watch } from '@nuxtjs/composition-api'
 
 const selectedBank = ref('')
+const sortByDate = ref(true)
+
+const transactionsFiltered = ref(transactions)
+
+const filterTransactions = (param: 'bank' | 'date') => {
+  if (param === 'bank') {
+    if (selectedBank.value !== '') {
+      transactionsFiltered.value = filterByBank(
+        selectedBank.value,
+        accounts,
+        transactions
+      )
+    } else {
+      transactionsFiltered.value = transactions
+    }
+  }
+  if (param === 'date') {
+    sortByDate.value = !sortByDate.value
+    transactionsFiltered.value = sortDates(transactionsFiltered.value)
+  }
+  return transactionsFiltered
+}
 
 const categoryById = (id: string) => {
   const category = categories.find((category) => category.id === id)
@@ -27,6 +52,10 @@ const arrayOfBanks = computed(() => {
   }
   return new Set(bankList)
 })
+
+watch(selectedBank, () => {
+  filterTransactions('bank')
+})
 </script>
 
 <template>
@@ -38,24 +67,31 @@ const arrayOfBanks = computed(() => {
       <div>Category</div>
       <div class="flex flex-col">
         <label class="ml-1" for="bank-select">Bank</label>
-
         <select
           v-model="selectedBank"
           class="mr-2"
           name="banks"
           id="bank-select"
+          @click="() => filterTransactions('bank')"
         >
-          <option value="">Sort by</option>
+          <option value="">Filter by</option>
           <option :value="bank" v-for="bank in arrayOfBanks" :key="bank">
             {{ bank }}
           </option>
         </select>
       </div>
-      <div>Date</div>
+
+      <div class="flex flex-col">
+        <div>Date</div>
+        <a class="cursor-pointer" @click="() => filterTransactions('date')"
+          >Sort</a
+        >
+      </div>
+
       <div>Amount</div>
     </div>
 
-    <SortByBank :bank-name="selectedBank" v-slot="{ transaction }">
+    <div v-for="transaction in transactionsFiltered">
       <TransactionRow
         :date="transaction.date"
         :currency="transaction.currency"
@@ -65,6 +101,6 @@ const arrayOfBanks = computed(() => {
         :bank="bankById(transaction.accountId)"
         :reference="transaction.reference"
       />
-    </SortByBank>
+    </div>
   </div>
 </template>
