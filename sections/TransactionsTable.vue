@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SearchText from '@/components/search/SearchText.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
 import { filterByBank } from '@/composables/filters'
 import { sortDates } from '@/composables/sorters'
@@ -32,6 +33,10 @@ const filterTransactions = (param: 'bank' | 'date') => {
   return transactionsFiltered
 }
 
+const updateFiltered = (searchResults: any) => {
+  transactionsFiltered.value = searchResults
+}
+
 const categoryById = (id: string) => {
   const category = categories.find((category) => category.id === id)
   return category?.name
@@ -60,6 +65,10 @@ watch(selectedBank, () => {
 
 <template>
   <div>
+    <SearchText
+      :transactions="transactions"
+      @submit="(searched) => updateFiltered(searched)"
+    />
     <div
       class="grid grid-cols-5 border-b-2 border-t-2 py-2 border-gray-200 text-gray-500 text-sm"
     >
