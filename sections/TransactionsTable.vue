@@ -2,6 +2,10 @@
 import SearchText from '@/components/search/SearchText.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
 
+import { fetchAllAccounts } from '@/composables/use-accounts'
+import { fetchAllCategories } from '@/composables/use-categories'
+import { fetchAllTransactions } from '@/composables/use-transactions'
+
 import { filterByBank } from '@/lib/utils/filter'
 import {
   searchBankById,
@@ -10,28 +14,35 @@ import {
 } from '@/lib/utils/search'
 import { sortDates } from '@/lib/utils/sort'
 
-import accounts from '@/static/mock-data/accounts.json'
-import categories from '@/static/mock-data/categories.json'
-import transactions from '@/static/mock-data/transactions.json'
-
 import { Transaction } from '@/types/transactions'
 
-import { computed, ref, watch } from '@nuxtjs/composition-api'
+import { computed, onBeforeMount, ref, watch } from '@nuxtjs/composition-api'
 
 const selectedBank = ref('')
 const lastSortDirectionAscending = ref(true)
-const transactionsFiltered = ref(transactions)
+const categories = ref<any>([])
+const accounts = ref<any>([])
+const transactions = ref<any>([])
+
+const transactionsFiltered = ref()
+
+onBeforeMount(async () => {
+  categories.value = await fetchAllCategories()
+  accounts.value = await fetchAllAccounts()
+  transactions.value = await fetchAllTransactions()
+  transactionsFiltered.value = await fetchAllTransactions() //to set the default data initially, and prevent the direct mutation of it later on (Before I had const transactionsFiltered = ref(transactions) and it would not allow me to reset all results when the search string was empty)
+})
 
 const filterTransactions = (param: 'bank' | 'date') => {
   if (param === 'bank') {
     if (selectedBank.value !== '') {
       transactionsFiltered.value = filterByBank(
         selectedBank.value,
-        accounts,
-        transactions
+        accounts.value,
+        transactions.value
       )
     } else {
-      transactionsFiltered.value = transactions
+      transactionsFiltered.value = transactions.value
     }
   }
 
@@ -42,7 +53,7 @@ const filterTransactions = (param: 'bank' | 'date') => {
     )
     lastSortDirectionAscending.value = !lastSortDirectionAscending.value
   }
-  return transactionsFiltered
+  return transactionsFiltered.value
 }
 
 const updateFiltered = (searchResults: Transaction[]) => {
@@ -51,8 +62,8 @@ const updateFiltered = (searchResults: Transaction[]) => {
 
 const arrayOfBanks = computed(() => {
   let bankList = []
-  for (let i = 0; i <= accounts.length - 1; i++) {
-    bankList.push(accounts[i].bank)
+  for (let i = 0; i <= accounts.value.length - 1; i++) {
+    bankList.push(accounts.value[i].bank)
   }
   return new Set(bankList)
 })
@@ -74,7 +85,7 @@ watch(selectedBank, () => {
         <label for="bank-select">Bank</label>
         <select
           v-model="selectedBank"
-          class="border border-gray-300 rounded h-full py-1 px-2"
+          class="border border-gray-300 rounded h-full py-1 px-2 w-52"
           name="banks"
           id="bank-select"
           @click="() => filterTransactions('bank')"
