@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { performSearch } from '@/composables/search'
+import { type Transaction } from '@/types/transactions'
 import { ref } from '@nuxtjs/composition-api'
 
 interface Props {
-  transactions: any
+  transactions: Transaction[]
 }
+
 interface Emits {
-  (e: 'submit', searched: any): void
+  (e: 'submit', searched: Transaction[]): void
 }
 
 const props = defineProps<Props>()

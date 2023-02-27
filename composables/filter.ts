@@ -1,9 +1,18 @@
-export const filterByBank = (bank: any, accounts: any, transactions: any) => {
+import { Account } from '@/types/accounts'
+import { Transaction } from '@/types/transactions'
+
+export const filterByBank = (
+  bank: string,
+  accounts: Account[],
+  transactions: Transaction[]
+) => {
   if (bank) {
-    const bankId = accounts.find((account: any) => account.bank === bank)?.id
+    const bankId = accounts.find(
+      (account: Account) => account.bank === bank
+    )?.id
 
     const result = transactions.filter(
-      (transaction: any) => transaction.accountId == bankId
+      (transaction: Transaction) => transaction.accountId == bankId
     )
 
     return result
