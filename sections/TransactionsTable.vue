@@ -15,7 +15,7 @@ import { filterByBank } from '~/composables/filter'
 import { computed, ref, watch } from '@nuxtjs/composition-api'
 
 const selectedBank = ref('')
-const sortByDate = ref(true)
+const lastSortDirectionAscending = ref(true)
 
 const transactionsFiltered = ref(transactions)
 
@@ -32,8 +32,11 @@ const filterTransactions = (param: 'bank' | 'date') => {
     }
   }
   if (param === 'date') {
-    sortByDate.value = !sortByDate.value
-    transactionsFiltered.value = sortDates(transactionsFiltered.value)
+    transactionsFiltered.value = sortDates(
+      transactionsFiltered.value,
+      lastSortDirectionAscending.value
+    )
+    lastSortDirectionAscending.value = !lastSortDirectionAscending.value
   }
   return transactionsFiltered
 }
@@ -57,46 +60,68 @@ watch(selectedBank, () => {
 
 <template>
   <div>
-    <div class="flex">
+    <div class="flex mb-2 gap-x-4">
       <SearchText
+        class="flex flex-col text-gray-500"
         :transactions="transactions"
         @submit="(searched) => updateFiltered(searched)"
       />
-      <div class="flex flex-col text-gray-500 ml-6">
-        <label class="" for="bank-select">Bank</label>
-        <div class="flex items-center">
-          <!--fix height difference of 0.5px -->
-          <select
-            v-model="selectedBank"
-            class="border my-2 border-gray-300 py-2 pl-2 rounded"
-            name="banks"
-            id="bank-select"
-            @click="() => filterTransactions('bank')"
-          >
-            <option value="">No filter applied</option>
-            <option :value="bank" v-for="bank in arrayOfBanks" :key="bank">
-              {{ bank }}
-            </option>
-          </select>
-        </div>
+      <div class="flex flex-col text-gray-500">
+        <label for="bank-select">Bank</label>
+        <select
+          v-model="selectedBank"
+          class="border border-gray-300 rounded h-full py-1 px-2"
+          name="banks"
+          id="bank-select"
+          @click="() => filterTransactions('bank')"
+        >
+          <option value="">No filter applied</option>
+          <option :value="bank" v-for="bank in arrayOfBanks" :key="bank">
+            {{ bank }}
+          </option>
+        </select>
       </div>
-
-      <div class="flex flex-col text-gray-500 ml-6">
+      <div class="flex flex-col text-gray-500">
         <div>Date</div>
         <a
-          class="cursor-pointer border border-gray-200 rounded px-2 py-2 my-2"
+          class="cursor-pointer border border-gray-300 rounded py-1 px-2"
           @click="() => filterTransactions('date')"
           >Sort</a
         >
       </div>
     </div>
+
     <div
       class="grid grid-cols-5 border-b-2 border-t-2 py-2 border-gray-200 text-gray-500 text-sm"
     >
       <div>Reference</div>
       <div>Category</div>
       <div>Bank</div>
-      <div>Date</div>
+      <div
+        class="flex gap-x-2 cursor-pointer group"
+        @click="() => filterTransactions('date')"
+      >
+        <div>Date</div>
+        <svg
+          width="9"
+          height="12"
+          viewBox="0 0 9 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="self-center"
+          :class="
+            lastSortDirectionAscending === true ? 'rotate-90' : '-rotate-90'
+          "
+        >
+          <path
+            d="M1.56957 2L7.5 7.96501L1.5 14"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="stroke-gray-500"
+          />
+        </svg>
+      </div>
 
       <div>Amount</div>
     </div>
