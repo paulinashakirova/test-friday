@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { performSearch } from '@/composables/search'
+import { performSearch } from '@/lib/utils/search'
 import { type Transaction } from '@/types/transactions'
 import { ref } from '@nuxtjs/composition-api'
 

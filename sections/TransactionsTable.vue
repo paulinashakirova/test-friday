@@ -2,13 +2,13 @@
 import SearchText from '@/components/search/SearchText.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
 
-import { filterByBank } from '@/composables/filter'
+import { filterByBank } from '@/lib/utils/filter'
 import {
   searchBankById,
   searchCategoryById,
   searchCategoryColorById,
-} from '@/composables/search'
-import { sortDates } from '@/composables/sort'
+} from '@/lib/utils/search'
+import { sortDates } from '@/lib/utils/sort'
 
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
