@@ -1,5 +1,24 @@
 # friday-finance-test
 
+## What I implemented
+
+- UI part for the transactions table list
+- Sorting algorithm (to sort by day or bank)
+- Search by text (so far only searching for references, but in the future it can be extended to seach through other metrics)
+- Mock data to be async
+- Adding typescript support
+- Make sorting by date independent from other filters/sorts, so it doesn't reset other filters.
+
+## What I wanted implement next
+
+- Unit tests
+- Cypress
+- Search by other params
+- Search by date range
+- Pagination (to return only limited amount of results, since the real data contains 100000+ records)
+- Changing the column order based on use case
+- Linting/Formatting
+
 ## MY GENERAL NOTES
 
 1. I spent some hours trying to integrate Firebase as my backend, but it doesn't support csv files out of the box. To integrate I needed to use external tools. I chose Retool, but it was buggy. So instead I converted csv files to json place them in the `/static` folder.
@@ -34,14 +53,14 @@ The error is different now.
   library: 'digital envelope routines',
   reason: 'unsupported',
   code: 'ERR_OSSL_EVP_UNSUPPORTED'`
-  
+
 [this](https://github.com/webpack/webpack/issues/15900#issuecomment-1373595261) solved the issue... to add `NODE_OPTIONS=--openssl-legacy-provider`
 
 - `ts-loader couldn't be loaded`. I added as a dev dep.
 - `Module build failed (from ./node_modules/ts-loader/index.js):friendly-errors 20:25:17`
 - `TypeError: loaderContext.getOptions is not a function`
-following [this](https://github.com/TypeStrong/ts-loader/issues/1484#issuecomment-1219600213) advice, I downgraded ts-loader to 8.4.0
-It's working!!!!! 
+  following [this](https://github.com/TypeStrong/ts-loader/issues/1484#issuecomment-1219600213) advice, I downgraded ts-loader to 8.4.0
+  It's working!!!!!
 
 Second day:
 

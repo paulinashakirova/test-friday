@@ -14,22 +14,24 @@ import {
 } from '@/lib/utils/search'
 import { sortDates } from '@/lib/utils/sort'
 
-import { Transaction } from '@/types/transactions'
-
 import { computed, onBeforeMount, ref, watch } from '@nuxtjs/composition-api'
+
+import { Account } from '@/types/accounts'
+import { Category } from '@/types/categories'
+import { Transaction } from '@/types/transactions'
 
 const selectedBank = ref('')
 const lastSortDirectionAscending = ref(true)
-const categories = ref<any>([])
-const accounts = ref<any>([])
-const transactions = ref<any>([])
+const categories = ref<Category[]>([])
+const accounts = ref<Account[]>([])
+const transactions = ref<Transaction[]>([])
 
 const transactionsFiltered = ref()
 
 onBeforeMount(async () => {
-  categories.value = await fetchAllCategories()
-  accounts.value = await fetchAllAccounts()
-  transactions.value = await fetchAllTransactions()
+  categories.value = (await fetchAllCategories()) as Category[] //temporary solution, which is not much better than any
+  accounts.value = (await fetchAllAccounts()) as Account[]
+  transactions.value = (await fetchAllTransactions()) as Transaction[]
   transactionsFiltered.value = await fetchAllTransactions() //to set the default data initially, and prevent the direct mutation of it later on (Before I had const transactionsFiltered = ref(transactions) and it would not allow me to reset all results when the search string was empty)
 })
 
@@ -141,7 +143,7 @@ watch(selectedBank, () => {
       <div>Amount</div>
     </div>
 
-    <div v-for="transaction in transactionsFiltered">
+    <div v-for="transaction in transactionsFiltered" :key="transaction.id">
       <TransactionRow
         :date="transaction.date"
         :currency="transaction.currency"

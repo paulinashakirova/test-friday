@@ -17,7 +17,7 @@ export const fetchAllTransactions = async () => {
       )
     )
 
-  return mockAsyncPromise(transactions, 1000)
+  return mockAsyncPromise(transactions, 100)
 
   // catch is unnecesary here, since it is duplicating an error displayed in the console (should error occur)
 }
