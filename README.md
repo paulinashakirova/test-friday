@@ -1,5 +1,7 @@
 # friday-finance-test
 
+### You can see the site [live](https://main--gentle-dolphin-34dc0b.netlify.app/)
+
 ## What I implemented
 
 - UI part for the transactions table list
