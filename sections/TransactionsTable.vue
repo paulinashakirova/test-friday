@@ -1,22 +1,25 @@
 <script setup lang="ts">
 import SearchText from '@/components/search/SearchText.vue'
 import TransactionRow from '@/components/transactions/TransactionRow.vue'
+
+import { filterByBank } from '@/composables/filter'
 import {
   searchBankById,
   searchCategoryById,
   searchCategoryColorById,
 } from '@/composables/search'
 import { sortDates } from '@/composables/sort'
+
 import accounts from '@/static/mock-data/accounts.json'
 import categories from '@/static/mock-data/categories.json'
 import transactions from '@/static/mock-data/transactions.json'
-import { filterByBank } from '~/composables/filter'
+
+import { Transaction } from '@/types/transactions'
 
 import { computed, ref, watch } from '@nuxtjs/composition-api'
 
 const selectedBank = ref('')
 const lastSortDirectionAscending = ref(true)
-
 const transactionsFiltered = ref(transactions)
 
 const filterTransactions = (param: 'bank' | 'date') => {
@@ -31,6 +34,7 @@ const filterTransactions = (param: 'bank' | 'date') => {
       transactionsFiltered.value = transactions
     }
   }
+
   if (param === 'date') {
     transactionsFiltered.value = sortDates(
       transactionsFiltered.value,
@@ -41,7 +45,7 @@ const filterTransactions = (param: 'bank' | 'date') => {
   return transactionsFiltered
 }
 
-const updateFiltered = (searchResults: any) => {
+const updateFiltered = (searchResults: Transaction[]) => {
   transactionsFiltered.value = searchResults
 }
 
