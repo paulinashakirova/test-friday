@@ -13,6 +13,7 @@
 
 ## What I wanted implement next
 
+- Mobile and tablet friendly
 - Unit tests
 - Cypress
 - Search by other params
