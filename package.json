@@ -2,7 +2,6 @@
   "name": "despair-friday",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider nuxt",
     "start": "NODE_OPTIONS=--openssl-legacy-provider nuxt start",
@@ -22,6 +21,7 @@
     "@supabase/supabase-js": "^2.10.0",
     "consola": "^2.15.3",
     "core-js": "^3.25.3",
+    "csv-parse": "^5.3.6",
     "nuxt": "^2.15.8",
     "path": "^0.12.7",
     "ts-node": "^10.9.1",
@@ -29,7 +29,7 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "webpack": "^5.75.0"
+    "webpack": "^4.46.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
